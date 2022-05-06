@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký học viên</title>
+</head>
+<style>
+    th{
+        background-color: aqua;
+    }
+    .bb{
+        color: blue;
+    }
+</style>
+<body style="background-color: lightgray">
+    <form>
+        <table>
+            <tr style="text-align: left">
+                <th colspan="4">Đăng ký học viên</th>
+            </tr>
+            <tr>
+                <td class="bb">Họ và tên</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td class="bb">Ngày sinh</td>
+                <td><input type="date" name="birthday"></td>
+            </tr>
+            <tr>
+                <td class="bb">Giới tính</td>
+                <td>
+                    <input type="radio" name="gender"> Nam
+                    <input type="radio" name="gender"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td class="bb">Địa chỉ</td>
+                <td>
+                    <textarea></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="bb">Lớp</td>
+                <td> <select name="class" >
+                    <option> ---Chọn lớp---</option>
+                    <option> 1</option>
+                    <option> 2</option>
+                    <option> 3</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="bb">Email</td>
+                <td> <input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td class="bb">Điện thoại</td>
+                <td> <input type="text" name="phone"></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td>
+                    <input type="submit" name="register" value="Đăng ký">
+                    <input type="reset" name="retype" value="Nhập lại">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
