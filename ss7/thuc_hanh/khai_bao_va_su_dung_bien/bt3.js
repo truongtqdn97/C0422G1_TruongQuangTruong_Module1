@@ -4,4 +4,3 @@ if (a%b==0)
     document.write("a la boi so cua b");
 else
     document.write("a ko phai la boi so cua b")
-// document.write("tong cua a va b la: " + (a+b));
