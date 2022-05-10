@@ -6,4 +6,5 @@ let avg = (phy+che+bio)/3;
 let total = phy+che+bio;
 
 document.write("the average of 3 subjects is: "+avg);
+document.write("<br>");
 document.write("the total of 3 subjects is: "+total);
