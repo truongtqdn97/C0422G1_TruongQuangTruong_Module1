@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <title>may tinh don gian</title>
 </head>
+<style>
+    table{
+        width: 25%;
+    }
+    button{
+        width: 50px;
+    }
+</style>
 <body>
-<table
+    <input type="text" id="screen">
+    <form>
+    <table>
+        <tr>
+            <td><button type="button" value="1" onclick="clickbtn(this.value)">1</button> </td>
+            <td><button type="button" value="2" onclick="clickbtn(this.value)">2</button> </td>
+            <td><button type="button" value="3" onclick="clickbtn(this.value)">3</button> </td>
+            <td><button type="button" value="+" onclick="clickbtn(this.value)">+</button> </td>
+        </tr>
+        <tr>
+            <td><button type="button" value="4" onclick="clickbtn(this.value)">4</button> </td>
+            <td><button type="button" value="5" onclick="clickbtn(this.value)">5</button> </td>
+            <td><button type="button" value="6" onclick="clickbtn(this.value)">6</button> </td>
+            <td><button type="button" value="-" onclick="clickbtn(this.value)">-</button> </td>
+        </tr>
+        <tr>
+            <td><button type="button" value="7" onclick="clickbtn(this.value)">7</button> </td>
+            <td><button type="button" value="8" onclick="clickbtn(this.value)">8</button> </td>
+            <td><button type="button" value="9" onclick="clickbtn(this.value)">9</button> </td>
+            <td><button type="button" value="*" onclick="clickbtn(this.value)">*</button> </td>
+        </tr>
+        <tr>
+            <td><button type="reset" onclick="allClear()">AC</button> </td>
+            <td><button type="button" value="0" onclick="clickbtn(this.value)">0</button> </td>
+            <td><button type="button" onclick="result()">=</button> </td>
+            <td><button type="button" value="/" onclick="clickbtn(this.value)">/</button> </td>
+        </tr>
+    </table>
+    </form>
 <script src="maytinh.js"></script>
 </body>
 </html>
