@@ -8,15 +8,16 @@
 <script>
     let salary = parseInt(prompt("Input your monthly salary($): "));
     let sales = parseInt(prompt('Input your sales achivement(%):'));
-    // let fsalary = 0;
+
     if (sales>=105){
         salary += salary;
     } else if (sales>=95){
-        salary += 3000;
+        salary += 3000; // salary = salary + 3000;
     } else if (sales>=85){
         salary += 2000;
     }
     document.write('Your salary in this month: '+ salary + '$');
+
 </script>
 </body>
 </html>
