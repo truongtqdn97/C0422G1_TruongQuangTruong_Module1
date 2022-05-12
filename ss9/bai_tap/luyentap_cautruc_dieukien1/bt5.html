@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 5</title>
+</head>
+<body>
+<script>
+    let Physics = parseInt(prompt('Enter the Physics point:'));
+    let Chemistry = parseInt(prompt('Enter the Chemistry point:'));
+    let Math = parseInt(prompt('Enter the Math point:'));
+    let point = (Physics+Chemistry+Math)/3;
+    if (point<5){
+        document.write("Grade D");
+    } else if (point<6.5){
+        document.write('Grade C');
+    } else if (point<7.5){
+        document.write('Grade B');
+    } else if (point<9){
+        document.write('Grade A')
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 7</title>
+</head>
+<body>
+<script>
+    // Phí thuê bao bắt buộc là 25 nghìn.
+    // 600 đồng cho mỗi gọi của 50 phút đầu tiên.
+    // 400 đồng cho mỗi phút gọi của 150 phút tiếp theo.
+    // 200 đồng cho bất kỳ mỗi phút nào sau 200 phút đầu tiên.
+    let phut = parseFloat(prompt("Nhap so phut: "));
+    let pbb = 25000;
+    let cuoc;
+    if (phut<=50){
+        cuoc = pbb + (600*phut)
+    } else if (phut<=200){
+        cuoc = pbb + (600*50) + (400*(phut-50))
+    } else {
+        cuoc = pbb + (600*50) + (400*150) + (200*(phut-200))
+    }
+    document.write('cuoc phi thang nay la: '+ cuoc);
+</script>
+</body>
+</html>
