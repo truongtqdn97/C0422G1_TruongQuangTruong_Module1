@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 2</title>
+</head>
+<body>
+<script>
+    //Viết chương trình nhập vào một số bất kỳ lớn hơn 0. Tính tổng các phần tử từ 1 đến số vừa nhập vào.
+    let num = parseInt(prompt('Input number:'));
+    let total = 0;
+    if (num <= 0){
+        document.write('Nhap lai!')
+    }else {
+        for (let i = 1; i<=num; i++){
+            total += i;
+        }
+        document.write("Total is: "+total);
+    }
+
+</script>
+</body>
+</html>
