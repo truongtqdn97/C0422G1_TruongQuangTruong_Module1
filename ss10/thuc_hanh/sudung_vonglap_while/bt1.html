@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 1</title>
+</head>
+<body>
+<script>
+    //Viết chương trình nhận vào một số từ hộp thoại, việc nhập kết thúc khi người dùng nhập vào giá trị -1.
+    // Mỗi giá trị nhập được sẽ được hiển thị ra và thực hiện tính tổng các giá trị đó.
+    //cach 1:
+    //let num, total=0;
+    // do {
+    //     num = parseInt(prompt("Input number: "));
+    //     if (num!=-1){
+    //         total +=num;
+    //         document.write('So vua nhap: '+num+"<br>")
+    //     }
+    //
+    // } while (num!=-1);
+    // document.write('Total: '+ parseInt(total));
+
+    //cach 2
+    let total = 0;
+    let num = parseInt(prompt('Input number: '));
+    while (num!=-1){
+        total+=num;
+        num = parseInt(prompt('Input number: '));
+    }
+    document.write("Total: "+total);
+</script>
+</body>
+</html>
