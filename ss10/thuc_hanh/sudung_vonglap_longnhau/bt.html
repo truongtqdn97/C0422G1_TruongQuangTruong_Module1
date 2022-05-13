@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>su dung vong lap long nhau</title>
+</head>
+<body>
+<script>
+    let i ;
+    let j;
+    let otable = "<table border='1' width='30%' style='border-collapse: collapse'>";
+    let ctable = "</table>";
+    let otr = "<tr align='center'>";
+    let ctr = "</tr>";
+    let otd = "<td>";
+    let ctd = "</td>";
+    document.write(otable);
+    for (i=1; i<=10;i++){
+        document.write(otr);
+        for (j=1;j<=10;j++){
+            document.write(otd + (j*i) + ctd);
+        }
+        document.write(ctr);
+    }
+    document.write(ctable);
+</script>
+
+</body>
+</html>
