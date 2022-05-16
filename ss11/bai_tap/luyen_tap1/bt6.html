@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 6</title>
+</head>
+<body>
+<script>
+    let count = 0;//dem co bao nhieu so chia het cho 7
+    // cach 1:
+    // let total = 0, i=7;
+    // while(count<30){
+    //     total+=i;
+    //     i+=7;
+    //     count++;
+    // }
+
+    //cach 2:
+    let total = 0, i=1;
+    while (count<30){
+        if (i%7==0){
+            total+=i;
+            count++;
+        }
+        i++;
+    }
+    document.write(total);
+</script>
+</body>
+</html>
