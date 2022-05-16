@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 3</title>
+</head>
+<body>
+<script>
+    for (i=1;i<6;i++){
+        for (j =1;j<=i;j++){
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+    document.write("<br>")
+    for (i=5;i>=1;i--){
+        for (j =1;j<=i;j++){
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+    for (i=1;i<6;i++){
+        for (j=4;j>=i;j--){
+            document.write('&nbsp&nbsp');//độ dài của &nbsp&nbsp = '*'
+        }
+        for (z=1;z<=i;z++){
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+    for (i=5;i>=1;i--){
+        for (z=4;z>=i;z--){
+            document.write('&nbsp&nbsp');
+        }
+        for (j=1;j<=i;j++){
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+</script>
+</body>
+</html>

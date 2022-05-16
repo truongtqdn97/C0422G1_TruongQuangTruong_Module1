@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 5</title>
+</head>
+<body>
+<script>
+    //     công thức a = p * (1+r)^n
+    let p = parseFloat(prompt("Nhập tiền cho vay:"));//số tiền cho vay ban đầu
+    let n = parseFloat(prompt("Nhập thời hạn cho vay:"));//thời hạn cho vay (đơn vị tính: tháng)
+    let r = parseFloat(prompt("Nhập lãi suất trong 1 tháng"));//lãi suất 1 tháng
+    let a; //tiền tích luỹ từng tháng
+    for (i=1;i<=n;i++){
+        a = p * Math.pow((1+r),i);
+        document.write("Số tiền phải trả trong tháng "+i+  " là: " + parseInt(a));
+        document.write('<br>');
+    }
+</script>
+</body>
+</html>
