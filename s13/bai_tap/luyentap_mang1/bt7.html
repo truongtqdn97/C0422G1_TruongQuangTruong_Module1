@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 7</title>
+</head>
+<body>
+<script>
+    // khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử, nhập/tạo phần tử số nguyên V
+    // kiểm tra xem V có thuộc mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng
+    // (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V, và gán 0 cho phần tử cuối cùng của mảng)
+    let a = Array(10);
+    for (let i = 0;i<a.length;i++){
+        a[i] = parseInt(prompt('Input number '+i+': '));
+    }//Khoi tao mang so nguyen nhap tu ban phim
+    document.write(a+'<br>');
+    let num = 0;
+    let V = parseInt(prompt('Input a random number:'));
+    for (let i =0; i<a.length;i++){
+        if (V==a[i]){
+            for (let j = i;j<a.length;j++){
+                a[j]=a[j+1];
+            }
+            num +=1;
+            a[a.length-num] = "";
+        }
+    }
+    let b = Array();//mảng b: mảng đã được loại bỏ các phần tử rỗng của mảng a
+    let j = 0;
+    for (let i=0;i<a.length;i++){
+        if (a[i]==""){
+            break;
+        }
+        b[j] = a[i];
+        j++;
+    }
+    document.write(b);
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 3</title>
+</head>
+<body>
+<script>
+    //Hiển hiện giá trị lớn nhất trong mảng đó.
+    // In ra giá trị trung bình của các phần tử trong mảng.
+    let a = [2,-4,6,8,-9,10,51,14,55,23];
+    let max = a[0];
+    let index = 0, total =0;
+    for (let i=0; i<a.length;i++){
+        if (a[i]>max){
+            max = a[i];
+            index = i;
+        }
+        total += a[i];
+    }
+    let avg = total/a.length;
+    document.write('Max is '+max+ ' at position '+index+'<br>');
+    document.write('Average is '+ avg);
+</script>
+</body>
+</html>

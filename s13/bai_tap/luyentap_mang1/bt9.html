@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 9</title>
+</head>
+<body>
+<script>
+    //khởi tạo/nhập vào 2 mảng số nguyên gồm 10 phần tử, gọi là mảng a và b
+    // Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên
+    // Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c
+    // Hiển thị mảng c.
+    let a = Array(10);
+    alert('Input the first array');
+    for (let i = 0;i<a.length;i++){
+        a[i] = parseInt(prompt('Input number '+i+': '));
+    }//Khoi tao mang so nguyen nhap tu ban phim
+    let b = Array(10);
+    alert('Input the second array');
+    for (let i = 0;i<b.length;i++){
+        b[i] = parseInt(prompt('Input number '+i+': '));
+    }//Khoi tao mang so nguyen nhap tu ban phim
+    let c = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    let al = a.length;
+    let bl = b.length;
+    let cl = c.length;
+    let j = 0, k = 0;
+    for (let i = c.length;i<(al+bl+cl);i++){
+        if (i<(cl+bl)){
+            c[i] = b[j];
+            j++;
+        }else {
+            c[i] = a[k];
+            k++;
+        }
+    }
+    document.write(c);
+</script>
+</body>
+</html>

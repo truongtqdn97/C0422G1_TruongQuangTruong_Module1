@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap 8</title>
+</head>
+<body>
+<script>
+    //khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử
+    //sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
+    let a = Array(10);
+    for (let i = 0;i<a.length;i++){
+        a[i] = parseInt(prompt('Input number '+i+': '));
+    }//Khoi tao mang so nguyen nhap tu ban phim
+    document.write('Before sort: '+ a + '<br>');
+    let temp;
+    for (let i = 0;i<a.length;i++){
+        for (let j=i;j<a.length;j++){
+            if (a[i]<a[j]){
+                temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+            }
+        }
+    }
+    document.write('After sort: '+ a + '<br>');
+</script>
+</body>
+</html>
