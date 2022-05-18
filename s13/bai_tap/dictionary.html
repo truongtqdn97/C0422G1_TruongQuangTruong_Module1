@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+<input type="text" id="txtInput">
+<input type="button" onclick="find()" value="Search">
+<!--<hr>-->
+<p id="result"></p>
+<script>
+    function find() {
+        let a1 = ["apple","banana","king","queen"];//english
+        let a2 = ["quả táo","quả chuối","vua","hoàng hậu"];//vietnamese
+        let input = document.getElementById("txtInput").value;
+        let result;
+        let check = 0;
+        for (let i = 0; i< a1.length;i++){
+            if (input == a1[i]){
+                result = a2[i];
+                check+=1;
+                break;
+            }
+        }
+        if (check==0) result = 'unsearchable';
+    document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>
