@@ -13,6 +13,9 @@
     document.write('<br>');
     let count =0 ;//dem so tu
     for (let i = 0; i < a.length; i++) {
+        if (a[i]==''){
+            continue;
+        }
         count++;
     }
     document.write(count);
