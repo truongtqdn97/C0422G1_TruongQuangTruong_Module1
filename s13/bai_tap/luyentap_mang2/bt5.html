@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 5</title>
+</head>
+<body>
+<script>
+    //nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+    let str1 = prompt('Input the first string: ');
+    let str2 = prompt('Input the second string: ');
+    let a1 = str1.split("");
+    let a2 = str2.split("");
+    let count = 0;
+    let j = 0;//phan tu dau tien cua mang a2
+    for (let i = 0; i < a1.length; i++) {
+        if (a1[i]!=a2[j]) {
+            count ++;
+            break;
+        }
+        j++;
+    }
+    if (count>0) {
+        document.write('2 chuoi không giong nhau');
+    } else {
+        document.write('2 chuoi giong nhau');
+    }
+</script>
+</body>
+</html>
