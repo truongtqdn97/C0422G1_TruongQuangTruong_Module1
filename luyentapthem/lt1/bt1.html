@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 1</title>
+</head>
+<body>
+<script>
+    //Nhập 1 chuỗi bất kì và 1 kí tự.
+    //Đếm số lần xuất hiện của kí tự đó trong chuỗi.
+    let str = prompt('Input a random string: ');
+    let sym = prompt('Input a random symbol: ');
+    let a = str.split("");//a la mang duoc chuyen tu chuoi str
+    let count = 0;//so lan xuat hien cua ky tu
+    for (let i = 0; i < a.length; i++) {
+        if (sym == a[i]) count ++;
+    }
+    if (count==0) document.write(sym + ' is not in string '+ '"'+str+'"');
+    else if (count==1) document.write('There is 1 '+'"'+sym+'"'+' in string '+ '"'+str+'"' );
+    else document.write('There are '+count+' '+'"'+sym+'"'+ ' in string '+'"'+str+'"');
+</script>
+</body>
+</html>

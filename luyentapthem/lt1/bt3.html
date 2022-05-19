@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 3</title>
+</head>
+<body>
+<script>
+    //cho người dùng nhập vào 1 số nguyên bất kì
+    //Hiển thị các số KHÔNG phải số nguyên tố từ 0 đến số người dùng nhập vào
+    let n = parseInt(prompt('Input a number: '));
+    let a = Array(0,1);
+    for (let i = 2; i <= n; i++) {
+        let count =0;
+        for (let j = 1; j <=Math.sqrt(i) ; j++) {
+            if (i%j==0) count++;
+        }
+        if (count>1) a.push(i);
+    }
+    document.write(a);
+</script>
+</body>
+</html>

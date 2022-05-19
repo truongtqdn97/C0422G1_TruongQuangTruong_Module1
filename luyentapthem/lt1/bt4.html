@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 4</title>
+</head>
+<body>
+<script>
+    //nhập vào 1 mảng các số nguyên
+    //Đếm số lần xuất hiện của các phần tử trong mảng đó.
+    //Ví dụ:
+    //[ 1,2,3,3,2,4] => 1 : 1 lần , 2 : 2 lần, 3: 2 lần, 4: 1 lần.
+    let n = parseInt(prompt('Input number of elements in the array: '));
+    let a = Array();
+    for (let i = 0; i < n; i++) {
+        a[i] =parseInt(prompt('Input index '+i))
+    }
+    document.write(a+'<br>');
+    a = a.sort();//sap xep mang a
+    document.write(a+'<br>');
+    let count;
+    // b = Array();//mang b bao gom cac phan tu ko trung cua mang a
+    for (let i = 0; i < a.length; i++) {
+        count = 1;
+        for (let j = i+1; j < a.length; j++) {
+            if (a[i]!="a"){
+                if (a[i]==a[j]){
+                    count++;
+                    a[j]="a";
+                }
+            }
+        }
+        if (a[i]!='a') document.write("element "+a[i]+': '+count+' lan '+'<br>');
+    }
+</script>
+</body>
+</html>

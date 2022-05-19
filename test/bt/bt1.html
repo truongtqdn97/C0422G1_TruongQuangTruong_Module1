@@ -2,42 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>bai 1</title>
+    <title>tam giác cân</title>
 </head>
 <body>
 <script>
-    function swap(x,y){
-        var t = x;
-        x = y;
-        y = t;
-    }
-    let arg1 = parseInt(prompt("Nhap so 1"));
-    let arg2 = parseInt(prompt("Nhap so 2"));
-    let arg3 = parseInt(prompt("Nhap so 3"));
-    let t;
-    if ((arg1 == arg2) && (arg1 == arg3))
-    {
-        document.write('-1');
-    }
-    else {
-        if (arg1<arg2){
-            swap(arg1,arg2);
+    var a =parseInt( prompt("nhập cạnh tam giác"))
+    for (var m =a; m>0;m--){
+        for (var n=1;n<=m-1;n++){
+            document.write('&nbsp&nbsp')
         }
-        if (arg2<arg3){
-            swap(arg2, arg3);
+        for (var k=1;k<=a+1-n;k++) {
+            document.write('*')
         }
-        if (arg1<arg3){
-            swap(arg1,arg3);
+        for (var z=1; z<=a-n;z++){
+            document.write(("*"))
         }
-        if (arg1<arg2){
-            swap(arg1,arg2);
-        }
-        if (arg1==arg2){
-            document.write(arg3 + ' la so lon thu 2');
-        }
-        else {
-            document.write(arg2 + ' la so lon thu 2');
-        }
+        document.write("<br>")
     }
 </script>
 </body>

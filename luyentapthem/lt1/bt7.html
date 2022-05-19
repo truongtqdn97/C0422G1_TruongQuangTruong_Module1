@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 7</title>
+</head>
+<body>
+<script>
+    //cho người dùng nhập vào :
+    //1 mảng số nguyên ( độ dài của mảng do người dùng lựa chọn ) và 1 số nguyên number bất kì.
+    //  Nếu number là số lẻ, thì tất cả số chẵn trong mảng sẽ tăng lên 1 đơn vị.
+    //  Ngược lại nếu number là số chẵn thì tất cả số lẻ trong mảng tăng lên 1 đơn vị.
+    //Yêu cầu hiển thị ra màn hình: Mảng số nguyên trước khi thay đổi, số người dùng nhập vào và mảng sau khi thay đổi.
+    let n = parseInt(prompt('Input number of elements in the array: '));
+    let a = Array();
+    for (let i = 0; i < n; i++) {
+        a[i] = parseInt(prompt('Input index '+i+' :'))
+    }
+    let randomN = parseInt(prompt('Input a random number: '));
+    document.write('before: '+a+'<br>');
+    if (randomN%2==0){
+        for (let i = 0; i < n; i++) {
+            if (a[i]%2!=0) a[i]+=1;
+        }
+    }
+    else {
+        for (let i = 0; i < n; i++) {
+            if (a[i]%2==0) a[i]+=1;
+        }
+    }
+    document.write('after: '+ a);
+</script>
+</body>
+</html>

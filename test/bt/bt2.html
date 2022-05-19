@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let s1 = "aabcc";
+    let s2 = "adcba";
+    let str1 = s1.split("");
+    let str2 = s2.split("");
+    console.log(str1.sort());
+    console.log(str2.sort());
+    str11 = str1.sort();
+    str22 = str2.sort();
+    let count = 0;
+    for (let i = 0; i < str11.length; i++) {
+        if (str11[i]==str22[i]) count ++;
+    }
+    document.write(count);
+</script>
+</body>
+</html>

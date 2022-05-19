@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 5</title>
+</head>
+<body>
+<script>
+    //hiển thị các số nhỏ hơn 10000 và các số đó thỏa mãn 2 yêu cầu:
+    //thứ nhất số đó thuộc dãy fibonacci
+    //thứ 2 số đó phải là số nguyên tố
+    let a = [1,1];//mang tap hop so fibonacci
+    let i = 0;
+    let j = 1;
+    do{
+        a.push(a[i]+a[j]);
+        i++;j++;
+    }while (a[i+1]<10000);
+    document.write('fibonacci: '+'<br>'+a+'<br>');
+    let b = Array();//day so can tim
+    for (let k = 0; k < a.length; k++) {
+        let count = 0;
+        for (let l = 1; l < Math.sqrt(a[k]); l++) {
+            if (a[k]%l==0) count++;
+        }
+        if (count==1) b.push(a[k]);
+    }
+    document.write('day so vua thuoc day fibonacci va la so nguyen to: '+'<br>'+ b);
+</script>
+</body>
+</html>
