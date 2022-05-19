@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Prime</title>
+</head>
+<body>
+<script>
+    function isPrime(number) {
+        let count = 0;
+        if (number==1) return false;
+        else {
+            for (let i = 1; i <= Math.sqrt(number) ; i++) {
+                if (number%i==0) count++;
+            }
+            if (count>1) return false;
+            else return true;
+        }
+    }
+    console.log(isPrime(3127));
+</script>
+</body>
+</html>
