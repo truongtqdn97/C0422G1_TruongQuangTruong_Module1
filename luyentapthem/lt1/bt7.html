@@ -18,15 +18,11 @@
     }
     let randomN = parseInt(prompt('Input a random number: '));
     document.write('before: '+a+'<br>');
-    if (randomN%2==0){
-        for (let i = 0; i < n; i++) {
+    for (let i = 0; i < n; i++) {
+        if (randomN%2==0){
             if (a[i]%2!=0) a[i]+=1;
-        }
-    }
-    else {
-        for (let i = 0; i < n; i++) {
+        } else
             if (a[i]%2==0) a[i]+=1;
-        }
     }
     document.write('after: '+ a);
 </script>
