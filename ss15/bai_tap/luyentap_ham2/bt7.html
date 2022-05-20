@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 7</title>
+</head>
+<body>
+<script>
+    //hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+    function swap(a,b) {
+        a = a+b;
+        b = a-b;
+        a = a-b;
+        document.write(a+'<br>');
+        document.write(b);
+    }
+    let n1 = parseInt(prompt('Input the first number:'));
+    let n2 = parseInt(prompt('Input the second number:'));
+    document.write('Before: '+'<br>');
+    document.write(n1+'<br>');
+    document.write(n2+'<br>');
+    document.write('After: '+'<br>');
+    swap(n1,n2);
+</script>
+</body>
+</html>

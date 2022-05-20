@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 4</title>
+</head>
+<body>
+<script>
+    //hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.
+    //Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+    function checkNumber(num) {
+        if (num%num==0) return true;
+        else return false;
+    }
+    let n = parseInt(prompt('Input a number:'));
+    document.write(checkNumber(n));
+</script>
+</body>
+</html>

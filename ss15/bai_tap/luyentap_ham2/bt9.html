@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 9</title>
+</head>
+<body>
+<script>
+    //hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không
+    //Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1
+    function indexOffake(arr,sym) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]==sym) count++;
+        }
+        if (count>0) return count;
+        else return -1;
+        // if (count==0) return -1;
+        // else return count;
+    }
+    let n = parseInt(prompt('Input number of elements in the array:'));
+    let a = Array();
+    for (let i = 0; i < n; i++) {
+        a[i] = prompt('Input index '+ i);
+    }
+    let s = prompt('Input a ramdom symbol: ');
+    document.write(a +'<br>');
+    document.write(s +'<br>');
+    document.write(indexOffake(a,s));
+</script>
+</body>
+</html>

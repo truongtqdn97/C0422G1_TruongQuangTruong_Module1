@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 2</title>
+</head>
+<body>
+<script>
+    //hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được
+    function area(num) {
+        return Math.PI * num * num;
+    }
+    function perimeter(num) {
+        return Math.PI * num * 2;
+    }
+    let r = parseInt(prompt("Input side of circle: "))
+    document.write('The area: '+ area(r).toFixed(4)+'<br>');
+    document.write('The perimeter: '+ perimeter(r).toFixed(4));
+</script>
+</body>
+</html>

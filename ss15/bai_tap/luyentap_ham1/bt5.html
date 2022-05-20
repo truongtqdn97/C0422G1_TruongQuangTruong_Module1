@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 5</title>
+</head>
+<body>
+<script>
+    let a1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let a2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    function findStar(str) {
+        for (var i = 0; i < a1.length; i++) {
+            if (a1[i]==str){
+                return a2[i];
+            }
+        }
+        return -1;
+    }
+    let star = prompt('Input name of star:');
+    let result = findStar(star);
+    if (result==-1) document.write("Can't find Constellation!");
+    else document.write('Star '+ star + ' belong to Constellation '+ result);
+</script>
+</body>
+</html>
