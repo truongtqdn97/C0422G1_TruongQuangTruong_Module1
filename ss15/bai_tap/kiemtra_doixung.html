@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra tu doi xung</title>
+</head>
+<body>
+<script>
+    //cach 1: ko dung de quy
+    // function isPalindrome(str) {
+    //     let j = str.length-1;
+    //     for (let i = 0; i < str.length/2; i++) {
+    //         if (str[i]!= str[j]) return false;
+    //         j--;
+    //     }
+    //     return true;
+    // }
+    //cach 2: de quy
+    function isPalindrome(str,first, last){
+        if (first-last==1 || first==last) return true;
+        else if (str[first]==str[last]) return isPalindrome(str,first+1,last-1);
+        else return false;
+    }
+    let string = prompt('Input a string: ');
+    document.write(isPalindrome(string, 0, string.length-1));
+</script>
+</body>
+</html>

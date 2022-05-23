@@ -10,12 +10,11 @@
     //thứ nhất số đó thuộc dãy fibonacci
     //thứ 2 số đó phải là số nguyên tố
     let a = [1,1];//mang tap hop so fibonacci
-    let i = 0;
-    let j = 1;
+    let i = 1;
     do{
-        a.push(a[i]+a[j]);
-        i++;j++;
-    }while (a[i+1]<10000);
+        a.push(a[i-1]+a[i]);
+        i++;
+    }while (a[i]<10000);
     document.write('fibonacci: '+'<br>'+a+'<br>');
     let b = Array();//day so can tim
     for (let k = 0; k < a.length; k++) {
