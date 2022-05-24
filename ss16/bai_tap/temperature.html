@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(degreeC) {
+            this.degreeC = degreeC;
+        }
+
+        setDegreeC(degreeC){
+            this.degreeC = degreeC;
+        }
+
+        getDegreeC(){
+            return this.degreeC;
+        }
+
+        converttoF(){
+            return this.degreeC*1.8+32;
+        }
+
+        converttoK(){
+            return this.degreeC+273.15;
+        }
+    }
+
+    let temp = new Temperature(25);
+    document.write('Degree C: '+temp.getDegreeC()+'<br>');
+    document.write('Degree F: '+temp.converttoF()+'<br>');
+    document.write('Degree K: '+temp.converttoK()+'<br>');
+
+</script>
+</body>
+</html>
