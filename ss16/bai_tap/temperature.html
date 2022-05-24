@@ -6,32 +6,32 @@
 </head>
 <body>
 <script>
-    class Temperature{
+    class Temperature {
         constructor(degreeC) {
             this.degreeC = degreeC;
         }
 
-        setDegreeC(degreeC){
+        setDegreeC(degreeC) {
             this.degreeC = degreeC;
         }
 
-        getDegreeC(){
+        getDegreeC() {
             return this.degreeC;
         }
 
-        converttoF(){
-            return this.degreeC*1.8+32;
+        converttoF() {
+            return this.degreeC * 1.8 + 32;
         }
 
-        converttoK(){
-            return this.degreeC+273.15;
+        converttoK() {
+            return this.degreeC + 273.15;
         }
     }
 
     let temp = new Temperature(25);
-    document.write('Degree C: '+temp.getDegreeC()+'<br>');
-    document.write('Degree F: '+temp.converttoF()+'<br>');
-    document.write('Degree K: '+temp.converttoK()+'<br>');
+    document.write('Degree C: ' + temp.getDegreeC() + '<br>');
+    document.write('Degree F: ' + temp.converttoF() + '<br>');
+    document.write('Degree K: ' + temp.converttoK() + '<br>');
 
 </script>
 </body>
