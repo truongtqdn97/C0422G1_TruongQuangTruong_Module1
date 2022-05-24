@@ -44,7 +44,10 @@
         }
 
         toString() {
-            return this.day + '/' + this.month + '/' + this.year;
+            if (this.day<10&&this.month<10) return "0"+this.day+ '/0' + this.month + '/' + this.year;
+            else if (this.day<10) return "0"+this.day+ '/' + this.month + '/' + this.year;
+            else if (this.month<10) return this.day+ '/0' + this.month + '/' + this.year;
+            else return this.day + '/' + this.month + '/' + this.year;
         }
     }
 
@@ -59,7 +62,7 @@
     // alert(date.getDay()+'/'+date.getMonth()+'/'+date.getYear());
 
     //set day, month, year by using setDate()
-    date.setDate(24, '05', 2022);
+    date.setDate(2, 12, 2022);
     alert(date.toString());
 </script>
 </body>
