@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3> Add New Product</h3>
+<input type="text" id="textAdd">
+<input type="button" value="Add" id="add" onclick="them()">
+
+<h3>Display All Product</h3>
+<input type="button" id="btnDisplay" value="Display" onclick="display_array();"/>
+<div id="result"></div>
+
+
+<input type="button" value="Edit" id="edit" onclick="sua()">
+<input type="button" value="Delete" id="delete" onclick="xoa()">
+<script>
+    let a = Array();
+    let i = 0;
+
+    function hienthi() {
+        for (let i = 0; i < a.length; i++) {
+            document.write(a[i] + '<br>')
+        }
+    }
+    function display_array() {
+        let e = "<hr/>";
+        for (let i = 0; i < array.length; i++) {
+            e += "Element " + i + " = " + array[i] + "<br/>";
+        }
+        document.getElementById("result").innerHTML = e;
+    }
+    function them() {
+        a[x] = document.getElementById('textAdd').value;
+        x++;
+        document.getElementById('textAdd').value = "";
+    }
+</script>
+</body>
+</html>

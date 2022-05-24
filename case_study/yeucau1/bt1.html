@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 1</title>
+</head>
+<body>
+<script>
+    //Vẽ hình chữ nhật rỗng chiều dài n và chiều rộng m
+    let n = parseInt(prompt('Nhap chieu dai: '));
+    let m = parseInt(prompt('Nhap chieu rong: '));
+    for (let i = 1; i <=n ; i++) {
+        for (let j = 1; j <= m ; j++) {
+            if (i==1||i==n){
+                document.write('*');
+            }else if (j==1||j==m){
+                document.write('*');
+            }else document.write('&ensp;');
+        }
+        document.write('<br>');
+    }
+</script>
+</body>
+</html>

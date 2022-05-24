@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 2</title>
+</head>
+<body>
+<script>
+    //Viết chương trình kiểm tra một ký tự trong bảng chữ cái tiếng anh là nguyên âm hay phụ âm.
+    //Ký tự là bất kỳ được nhập từ bàn phím.
+    //Các ký tự nguyên âm bao gồm: 'o', 'u', 'i', 'a', 'e' hoặc 'O', 'U', 'I', 'A', 'E'
+    let letter = prompt('Input a letter: ');
+    switch (letter) {
+        case 'o':
+        case 'u':
+        case 'i':
+        case 'a':
+        case 'e':
+        case 'O':
+        case 'U':
+        case 'I':
+        case 'A':
+        case 'E':{
+            document.write('nguyen am'); break;
+        }
+        default: document.write('phu am');
+    }
+</script>
+</body>
+</html>

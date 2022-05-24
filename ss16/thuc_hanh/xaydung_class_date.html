@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành: Xây dựng lớp Date</title>
+</head>
+<body>
+<script>
+    class MyDate {
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        getDay() {
+            return this.day;
+        }
+
+        getMonth() {
+            return this.month;
+        }
+
+        getYear() {
+            return this.year;
+        }
+
+        setDay(newday) {
+            this.day = newday;
+        }
+
+        setMonth(newmonth) {
+            this.month = newmonth;
+        }
+
+        setYear(newyear) {
+            this.year = newyear;
+        }
+
+        setDate(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        toString() {
+            return this.day + '/' + this.month + '/' + this.year;
+        }
+    }
+
+    //create a new day in class MyDate
+    let date = new MyDate(2, 2, 2007);
+    // alert(date.getDay()+'/'+date.getMonth()+'/'+date.getYear());
+
+    //change attributes of above object
+    // date.setDay(24);
+    // date.setMonth('05'); //if set 05, program display error
+    // date.setYear(2022);
+    // alert(date.getDay()+'/'+date.getMonth()+'/'+date.getYear());
+
+    //set day, month, year by using setDate()
+    date.setDate(24, '05', 2022);
+    alert(date.toString());
+</script>
+</body>
+</html>

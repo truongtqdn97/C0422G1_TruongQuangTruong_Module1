@@ -7,14 +7,12 @@
 <body>
 <script>
     function isPrime(number) {
-        let count = 0;
         if (number==1) return false;
         else {
-            for (let i = 1; i <= Math.sqrt(number) ; i++) {
-                if (number%i==0) count++;
+            for (let i = 2; i <= Math.sqrt(number) ; i++) {
+                if (number%i==0) return false;
             }
-            if (count>1) return false;
-            else return true;
+            return true;
         }
     }
 
