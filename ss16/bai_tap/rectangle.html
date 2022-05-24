@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<script>
+    class Rectangle{
+        constructor(Rlength, Rwidth) {
+            this.Rlength = Rlength;
+            this.Rwidth = Rwidth;
+        }
+
+        setLength(Rlength){
+            this.Rlength = Rlength;
+        }
+
+        setWidth(Rwidth){
+            this.Rwidth = Rwidth;
+        }
+
+        getLength(){
+            return this.Rlength;
+        }
+
+        getWidth(){
+            return this.Rwidth;
+        }
+
+        getArea(){
+            return this.Rlength*this.Rwidth;
+        }
+
+        getPerimeter(){
+            return (this.Rlength+this.Rwidth)*2;
+        }
+
+        //draw Rectangle
+    }
+    let hcn = new Rectangle();
+    let len = parseInt(prompt('Input length of Rectangle: '));
+    // let wid = parseInt(prompt('Input width of Rectangle: '));
+    hcn.setLength(len);hcn.setWidth(wid);
+
+    // Display rectangle on Web screen
+
+    //change length and width of Rectangle
+    // hcn.setLength(12); hcn.setWidth(7);
+
+    document.write('the length of Rectangle: '+hcn.getLength()+'<br>');
+    document.write('the width of Rectangle: '+hcn.getWidth()+'<br>');
+    document.write('the Area of Rectangle: '+hcn.getArea()+'<br>');
+    document.write('the Perimeter of Rectangle '+hcn.getPerimeter()+'<br>');
+</script>
+</body>
+</html>
