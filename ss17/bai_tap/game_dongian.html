@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đơn giản, di chuyển đối tượng</title>
+</head>
+<body>
+<div id="game"></div>
+<script>
+    class Hero {
+        constructor(image, top, left, size) {
+            this.image = image;
+            this.top = top;
+            this.left = left;
+            this.size = size;
+        }
+
+        getHeroElement() {
+            return '<img width="' + this.size + '"' +
+                ' height="' + this.size + '"' +
+                ' src="' + this.image + '"' +
+                ' style="top: ' + this.top + 'px; left:' + this.left + 'px;position:absolute;" />';
+        }
+
+        moveRight() {
+            this.left += 50;
+        }
+
+        moveLeft() {
+            this.left -= 50;
+        }
+        moveDown(){
+            this.top -= 50;
+        }
+        moveUp(){
+            this.top += 50;
+        }
+    }
+
+    var hero = new Hero('pikachu.png', 20, 30, 200);
+
+    function start() {
+        // if (hero.left < window.innerWidth - hero.size) {
+        if (hero.left < window.innerWidth - hero.size){
+            hero.moveRight();
+        }
+
+        // } else if (this.top < window.innerHeight - hero.size ){
+        //     hero.moveDown();
+        // }
+
+
+        document.getElementById('game').innerHTML = hero.getHeroElement();
+        setTimeout(start, 200)
+    }
+
+    start();
+</script>
+</body>
+</html>
