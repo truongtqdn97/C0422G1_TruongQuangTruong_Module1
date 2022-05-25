@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô phỏng sự hoạt động của đèn pin</title>
+</head>
+<body>
+<script>
+    class Battery{
+        constructor(energy) {
+            this.energy = energy;
+        }
+        setEnergy(energy){
+            this.energy = energy;
+        }
+        getEnergy(){
+            return this.energy;
+        }
+        decreaseEnergy(){
+            if (this.energy>0) return this.energy--;
+        }
+    }
+    class FlashLamp{
+        constructor() {
+        }
+        setBattery(battery){//battery is a new object in class Battery, not a parameter,read line 47
+            this.battery = battery;
+        }
+        getBatteryInfo(){
+            return this.battery.getEnergy();
+        }
+        turnOn(){
+            this.status = true;
+        }
+        turnOff(){
+            this.status = false;
+        }
+        light(){
+            if (this.status){
+                alert('Lighting');
+            }else {
+                alert('Not Lighting');
+            }
+        }
+
+    }
+    let battery = new Battery();//read note in line 26
+    battery.setEnergy(50);
+
+    let flashLamp = new FlashLamp();
+    flashLamp.setBattery(battery);
+
+    document.write("Battery info: "+flashLamp.getBatteryInfo()+"<br>");
+    flashLamp.light();//alert about status of lamp
+
+    document.write("Turn on"+"<br>");
+    flashLamp.turnOn();
+    flashLamp.light();
+    document.write("Battery info: "+flashLamp.getBatteryInfo()+"<br>");
+
+    document.write("Turn off"+"<br>");
+    flashLamp.turnOff();
+    flashLamp.light();
+</script>
+</body>
+</html>
